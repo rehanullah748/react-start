@@ -1,5 +1,7 @@
+import { useState } from "react"
 const Test = (props) => {
-    //1- return props.testData.length;
+   const [state, setState] = useState('aziz')
+    return <h1>{state}</h1>;
     //2- return <h1>{props.testData.length}</h1>
     //3-  return(
     //     <div>
@@ -13,17 +15,8 @@ const Test = (props) => {
     //     </div>
     //    )
     // }) : <h1>no data</h1>
-    return(
-        <div>
-            <h1>All users</h1>
-            {props.testData.length > 0 ? props.testData.map((user) => {
-           return(
-        <div>
-            <h1>{user.id}</h1>
-        </div>
-           )
-            })  : <p>no data</p>}
-        </div>
-    )
+    //5- 
+    
+    
 }
 export default Test;

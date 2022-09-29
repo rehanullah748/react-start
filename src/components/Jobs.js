@@ -2,7 +2,7 @@ import currency from 'currency-formatter'
 const Jobs = ({allJobs}) => {
     
     return(
-        <div className="max-w-screen-lg ml-auto mr-auto mt-5 ">
+        <div className="">
            {allJobs.length  > 0 ?  allJobs.map(function(job) {
              return(
                 <div className="flex mb-4 hover:bg-gray-100 p-4 rounded-sm">
@@ -14,7 +14,7 @@ const Jobs = ({allJobs}) => {
                         <span className="inline-block mt-1 text-sm text-gray-500 capitalize">{job.status}</span>
                         <span className= "ml-4 text-sm font-medium text-gray-500" >{currency.format(job.salary, {code: 'USD'})}</span>
                     </div>
-                <div className=' flex-1 ml-5 flex justify-end'>
+                <div className=' flex-1 ml-50 flex justify-end'>
                     <button className='bg-rose-600 text-white text-sm font-bold px-6 rounded-md capitalize'>delete</button>
                 </div>
                 </div>
